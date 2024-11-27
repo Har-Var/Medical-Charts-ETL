@@ -27,10 +27,16 @@ Medical Charts ETL is a project that tracks the movement of Medical Charts acros
    ```
    pip install -r requirements.txt
    ```
-4. Ensure you have Microsoft Excel installed (version supporting macros)
-5. Enable macros in Excel:
+4. Configure the config_sample.py file at `src\config\config_sample.py` as per your environment. Rename the file to `config.py`
+5. Ensure you have Microsoft Excel installed (version supporting macros)
+6. Enable macros in Excel:
    - Go to `File > Options > Trust Center > Trust Center Settings`.
    - Enable "Trust access to VBA project object model."
+7. Install SQL Server Management Studio (SSMS)
+   - Download and install SSMS from the official Microsoft website:  
+      [Download SSMS](https://aka.ms/ssmsfullsetup)
+   - Launch SSMS and connect to your SQL Server instance using your credentials.
+8. Create a database named `MedicalChartsETL` in SQL Server by executing `sql_scripts\create_EntireDatabase_MedicalChartsETL.sql` in SSMS
 
 ## Usage
 Run the demo notebook `end_to_end_demo.ipynb` in the `notebooks` folder.

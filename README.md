@@ -1,8 +1,8 @@
 
-# NCERT Books Downloader
+# Medical Charts ETL
 
 ## Description  
-NCERT Books Downloader is a project designed to simplify and improve the process of downloading NCERT books by offering a user-friendly Graphical User Interface (GUI). While the official NCERT [Download Page](https://ncert.nic.in/textbook.php) allows users to select and download books, it provides them in a Zip format with separate files for each chapter, index, and cover page. This application consolidates all these files into a single, easily accessible PDF format, streamlining the download experience.
+Medical Charts ETL is a project that tracks the movement of Medical Charts across various locations like SQL tables, Windows Locations and CSV Files. The end output of the project is that it loads and updates two tables maintained in SQL Server. This project also demonstrates and end-to-end automation, where the entire process can be run using a trigger drop.  
 
 
 ## Table of Contents
@@ -19,33 +19,21 @@ NCERT Books Downloader is a project designed to simplify and improve the process
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Har-Var/NCERT-Books-Downloader.git
-   cd NCERT-Books-Downloader
+   git clone https://github.com/Har-Var/Medical-Charts-ETL.git
+   cd Medical-Charts-ETL
    ```
 2. Ensure you have Python 3.x installed.
 3. Install the required dependencies:
    ```
    pip install -r requirements.txt
    ```
-4. If there are residual files in the `data/` folder. Run the following cleanup script.
-   ```bash
-   python run_cleanup.py
-   ```
-5. Run the scraper script to generate resource file
-   ```bash
-   python run_scraper.py
-   ```
+4. Ensure you have Microsoft Excel installed (version supporting macros)
+5. Enable macros in Excel:
+   - Go to `File > Options > Trust Center > Trust Center Settings`.
+   - Enable "Trust access to VBA project object model."
 
 ## Usage
-Run the CLI App with:
-```bash
-python run_cli_app.py
-```
-
-Run the GUI App with:
-```bash
-python run_gui_app.py
-```
+Run the demo notebook `end_to_end_demo.ipynb` in the `notebooks` folder.
 
 ## Features
 - Provides an improved User Interface to download NCERT Books.
@@ -86,4 +74,4 @@ This project is licensed under the MIT License.
 - [Har-Var](https://github.com/Har-Var)
 
 ## Acknowledgments
-Thanks to the National Council of Educational Research & Training (NCERT) and to everyone who helped test and improve the downloader.
+Thanks to everyone who helped me test and improve upon this project.

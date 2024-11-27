@@ -165,3 +165,6 @@ notes/
 screenshots/
 config.py
 archive/
+automation/*
+!automation/recon_report_load/trigger/
+data/

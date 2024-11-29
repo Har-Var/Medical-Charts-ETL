@@ -168,3 +168,4 @@ archive/
 automation/*
 !automation/recon_report_load/trigger/
 data/
+diagrams/
